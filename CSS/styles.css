@@ -1,0 +1,39 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #FFC0CB;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 10px;
+}
+
+section {
+    padding: 20px;
+}
+
+.service, .product {
+    text-align: center;
+    margin: 20px;
+}
+
+img {
+    max-width: 100%;
+}
+
+footer {
+    text-align: center;
+    background-color: #FFC0CB;
+    padding: 10px;
+}
