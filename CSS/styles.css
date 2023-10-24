@@ -1,39 +1,130 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 /* styles.css */
 body {
-    font-family: Arial, sans-serif;
+  font-family: "Frank Ruhl Libre", serif;
+  text-align: center;
+  /* background-image: url("https://i.postimg.cc/CMZymgvg/n2.png"); */
+  background-blend-mode: darken;
+  background-size: cover;
+  background-position: center;
 }
 
 header {
-    background-color: #FFC0CB;
-    padding: 20px;
-    text-align: center;
+  font-family: "Dancing Script", cursive;
+  font-family: "Frank Ruhl Libre", serif;
+  font-family: "Noto Sans", sans-serif;
+  padding: 20px;
+  text-align: center;
 }
 
 nav ul {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
 nav li {
-    display: inline;
-    margin: 10px;
+  display: inline;
+  margin: 10px;
 }
 
 section {
-    padding: 20px;
+  padding: 20px;
 }
 
-.service, .product {
-    text-align: center;
-    margin: 20px;
+.service,
+.product {
+  text-align: center;
+  margin: 20px;
+}
+
+#contact.img{
+  background-image: url(https://i.postimg.cc/s2921sgB/Screenshot-2023-10-24-085416.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 img {
-    max-width: 100%;
+  width: 40%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  object-position: center;
 }
 
 footer {
-    text-align: center;
-    background-color: #FFC0CB;
-    padding: 10px;
+  font-family: "Dancing Script", cursive;
+  font-family: "Frank Ruhl Libre", serif;
+  font-family: "Noto Sans", sans-serif;
+  text-align: center;
+  background-color: #ffc0cb;
+  padding: 10px;
+}
+
+/* Nav */
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #ffc0cb;
+}
+
+li {
+  float: left;
+  border-right: 1px solid #bbb;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+.product{
+    margin: 1;
+    padding: 0;
+}
+
+/* 
+.product{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "firstHeading secondHeading"
+    "data1        data2"
+    "data4        data5"
+    ;
+} */
+
+#body-img{
+    background-image: url(https://i.postimg.cc/s2921sgB/Screenshot-2023-10-24-085416.png);
+}
+
+
+
+#sec1{
+    grid-area: firstHeading;
+    padding: 20px;
+}
+
+#sec2{
+    grid-area: secondHeading;
+    padding: 20px;
 }
